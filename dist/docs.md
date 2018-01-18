@@ -96,8 +96,7 @@ Response:
 ## User Sign In
 
 ```http
-POST /users/access_token.json
-POST /users/sign_in.json (Deprecated)
+POST https://vs2.sp33c.de/api/users/access_token.json
 ```
 
 Parameters:
