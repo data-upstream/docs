@@ -15,7 +15,7 @@ https://db.alpha.data-upstream.ch/api/
 https://alpha.data-upstream.ch/
 
 2. Create Streams / Devices
-3. From the list, tap the magnifying device
+3. From the list, tab the magnifying device
 4. use your first token from list for your device.
 5. Set Headers appriately:          
 {
