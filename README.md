@@ -15,16 +15,20 @@ https://db.alpha.data-upstream.ch/api/
 https://alpha.data-upstream.ch/
 
 2. Create Streams / Devices
-3. From the list, tab the magnifying device
-4. use your first token from list for your device.
+3. From the list, tab the magnifying glass
+4. Copy the token from your first entry in list
+
+## prepare your devices
+
 5. Set Headers appriately:          
 {
   "Content-Type": "application/json",
   "Accept": "application/json",
   "X-Access-Token": "<YOUR TOKEN>"
 }
-6. Push any JSON to 
+6. Push any valid JSON to 
 https://db.alpha.data-upstream.ch/api/log_data
+
 
 
 
