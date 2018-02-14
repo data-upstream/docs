@@ -24,7 +24,7 @@ https://alpha.data-upstream.ch/
 {
   "Content-Type": "application/json",
   "Accept": "application/json",
-  "X-Access-Token": "<YOUR TOKEN>"
+  "X-Access-Token": "YOUR_TOKEN"
 }
 6. Push any valid JSON to 
 https://db.alpha.data-upstream.ch/api/log_data
