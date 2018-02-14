@@ -20,14 +20,16 @@ https://alpha.data-upstream.ch/
 
 ## prepare your devices
 
-5. Set Headers appriately:          
+1. Set Headers appriately:          
 {
   "Content-Type": "application/json",
   "Accept": "application/json",
   "X-Access-Token": "YOUR_TOKEN"
 }
-6. Push any valid JSON to 
+2. From your data source/producer push any valid JSON to 
 https://db.alpha.data-upstream.ch/api/log_data
+3. Run a Jupyter Notebook to explore the data with Bokeh, etc...
+See https://www.data-upstream.ch/ for more informations
 
 
 
