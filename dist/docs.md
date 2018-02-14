@@ -78,7 +78,7 @@ These parameters will be omitted from the documentation below.
 ## User Registration
 
 ```http
-POST https://vs2.sp33c.de/api/users.json
+POST https://db.alpha.data-upstream.ch/api/users.json
 ```
 
 Parameters:
@@ -96,7 +96,7 @@ Response:
 ## User Sign In
 
 ```http
-POST https://vs2.sp33c.de/api/users/access_token.json
+POST https://db.alpha.data-upstream.ch/api/users/access_token.json
 ```
 
 Parameters:
@@ -114,7 +114,7 @@ Response:
 ## User Sign Out
 
 ```http
-DELETE https://vs2.sp33c.de/api/users/access_token.json
+DELETE https://db.alpha.data-upstream.ch/api/users/access_token.json
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -126,7 +126,7 @@ Response:
 ## Listing Streams
 
 ```http
-GET https://vs2.sp33c.de/api/users/streams.json
+GET https://db.alpha.data-upstream.ch/api/users/streams.json
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -138,7 +138,7 @@ Response:
 ## Stream Registration
 
 ```http
-POST https://vs2.sp33c.de/api/users/streams.json
+POST https://db.alpha.data-upstream.ch/api/users/streams.json
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -157,7 +157,7 @@ Response:
 ## Stream Update
 
 ```http
-PUT https://vs2.sp33c.de/api/users/streams/id.json
+PUT https://db.alpha.data-upstream.ch/api/users/streams/id.json
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -174,7 +174,7 @@ Response:
 ## Listing Device Access Tokens
 
 ```http
-GET https://vs2.sp33c.de/api/devices/:device_id/device_access_tokens.json
+GET https://db.alpha.data-upstream.ch/api/devices/:device_id/device_access_tokens.json
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -186,7 +186,7 @@ Response:
 ## Listing Log Data
 
 ```http
-GET https://vs2.sp33c.de/api/log_data.json
+GET https://db.alpha.data-upstream.ch/api/log_data.json
 ```
 
 This endpoint is authenticated and accepts only **device access tokens**.
@@ -199,7 +199,7 @@ Response:
 ## Creating Log Data
 
 ```http
-POST https://vs2.sp33c.de/api/log_data.json
+POST https://db.alpha.data-upstream.ch/api/log_data.json
 ```
 
 This endpoint is authenticated and accepts only **device access tokens**.
@@ -215,7 +215,7 @@ set the correct `Content-Type` header (which is`application/json`).
 Example (JavaScript fetch):
 
 ```javascript
-const BASE_URL = 'https://vs2.sp33c.de/api';
+const BASE_URL = 'https://db.alpha.data-upstream.ch/api';
 
 const requestBody = {
   payload: {
@@ -242,7 +242,7 @@ Example (Python):
 import json
 import requests
 
-BASE_URL = 'https://vs2.sp33c.de/api'
+BASE_URL = 'https://db.alpha.data-upstream.ch/api'
 
 headers = {
     'Content-Type': 'application/json',
@@ -269,7 +269,7 @@ Response:
 ## Listing Log Data Images
 
 ```http
-GET https://vs2.sp33c.de/api/streams/log_data/:id/images
+GET https://db.alpha.data-upstream.ch/api/streams/log_data/:id/images
 ```
 
 This endpoint is authenticated and accepts only **device access tokens**.
@@ -282,7 +282,7 @@ Response:
 ## Create Log Data Images
 
 ```http
-POST https://vs2.sp33c.de/api/streams/log_data/:id/images
+POST https://db.alpha.data-upstream.ch/api/streams/log_data/:id/images
 ```
 
 This endpoint is authenticated and accepts only **device access tokens**.
@@ -302,7 +302,7 @@ Example (Python):
 ```python
 import requests
 
-BASE_URL = 'https://vs2.sp33c.de/api'
+BASE_URL = 'https://db.alpha.data-upstream.ch/api'
 
 image1 = ('images[]', ('image.png', open('image.png', 'rb'), 'image/png'))
 image2 = ('images[]', ('image.png', open('image.png', 'rb'), 'image/png'))
@@ -317,7 +317,7 @@ print(r.json())
 ## Retrieve System Config
 
 ```http
-GET https://vs2.sp33c.de/api/system_config/:key
+GET https://db.alpha.data-upstream.ch/api/system_config/:key
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -334,7 +334,7 @@ Supported keys:
 ## Update System Config
 
 ```http
-POST https://vs2.sp33c.de/api/system_config/:key
+POST https://db.alpha.data-upstream.ch/api/system_config/:key
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -351,7 +351,7 @@ Response:
 ## User Profile
 
 ```http
-GET https://vs2.sp33c.de/api/profile
+GET https://db.alpha.data-upstream.ch/api/profile
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -363,7 +363,7 @@ Response:
 ## List Aggregate Log Data
 
 ```http
-GET https://vs2.sp33c.de/api/aggregate_log_data
+GET https://db.alpha.data-upstream.ch/api/aggregate_log_data
 ```
 
 This endpoint is authenticated and accepts only **user access tokens**.
@@ -381,7 +381,7 @@ Response:
 ## Webhook Registration
 
 ```http
-POST https://vs2.sp33c.de/api/users/streams/:stream_id/webhooks
+POST https://db.alpha.data-upstream.ch/api/users/streams/:stream_id/webhooks
 ```
 
 URL Parameters:
@@ -402,7 +402,7 @@ Response:
 ## Webhook Update
 
 ```http
-PUT https://vs2.sp33c.de/api/users/webhooks/:id
+PUT https://db.alpha.data-upstream.ch/api/users/webhooks/:id
 ```
 
 URL Parameters:
