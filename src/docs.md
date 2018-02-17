@@ -4,7 +4,14 @@
 There are two types of access tokens:
 
 1. User access tokens - these tokens are granted to users via the user
-   registration and sign in endpoints.
+   registration and sign in endpoints. Furthermore, user access tokens can
+   either be _read-only_ or _read/write_. A read/write token is a more
+   powerful one. Hence, if an endpoint accepts a read-only token, it will also
+   accept a read/write token. Unless otherwise specified, a user access token
+   is taken to be one with read/write capability. When a read-only token is used
+   on an endpoint that requires a read/write token, the response will carry a
+   status code of 401 (unauthorized). Such response will be omitted from the
+   documentation below.
 2. Device access tokens - these tokens are granted to devices via the device
    creation endpoint. During device creation, more than one access tokens may be
    granted. The usage of these tokens depend on the key rotation system config.
@@ -103,6 +110,7 @@ Parameters:
 
 - `email`
 - `password`
+- `read_only` - Defaults to `false`.
 
 Response:
 
@@ -366,7 +374,10 @@ Response:
 GET ___BASE_URL___/aggregate_log_data
 ```
 
-This endpoint is authenticated and accepts only **user access tokens**.
+This endpoint is authenticated and accepts only **user access tokens**. These
+tokens can be both _read-only_ and _read/write_. Hence, if you wish to grab data
+via client-side JavaScript (for e.g., to do visualization), you can create a
+read-only token and use it here.
 
 Query parameters:
 
