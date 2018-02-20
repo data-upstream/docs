@@ -11,7 +11,7 @@ https://alpha.data-upstream.ch/
 
 2. Create Streams / Devices
 3. From the list, tab the magnifying glass
-4. Copy the token from your first entry in list
+4. Copy the token from your first entry in list (these are read-write-tokens)
 
 ## prepare your devices
 
@@ -26,6 +26,9 @@ https://db.alpha.data-upstream.ch/api/log_data
 3. Run a Jupyter Notebook to explore the data with Bokeh, etc...
 See https://www.data-upstream.ch/ for more informations
 
+# Read-only tokens to develop webapps to use or display data
+
+We have implemented our read only tokens (See the API-Doc) for use in web apps, or apps you want to share.
 
 
 
